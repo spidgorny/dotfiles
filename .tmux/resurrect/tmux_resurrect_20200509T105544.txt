@@ -1,0 +1,10 @@
+pane	0	0	:htop	1	:*	0	:/home/slawa/dev/pinacotheque	0	bash	:
+pane	0	0	:htop	1	:*	1	:/home/slawa/dev/pinacotheque	1	htop	:htop
+pane	3	0	:bash	1	:*	0	:/home/slawa/dev/pinacotheque	1	bash	:
+pane	3	0	:bash	1	:*	1	:/home/slawa	0	htop	:htop
+pane	3	0	:bash	1	:*	2	:/home/slawa	0	tload	:tload
+pane	4	0	:bash	1	:*	0	:/home/slawa	1	bash	:
+window	0	0	1	:*	04c0,204x58,0,0{102x58,0,0,0,101x58,103,0,1}
+window	3	0	1	:*	d448,204x58,0,0{102x58,0,0,7,101x58,103,0[101x29,103,0,8,101x28,103,30,9]}
+window	4	0	1	:*	677f,204x58,0,0,10
+state	4	
