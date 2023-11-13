@@ -104,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 alias log="tail -f /var/log/apache2/error.log | sed 's/\\\\n/\\n/g'"
 alias composer="php ~/dev/composer.phar"
 
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux attach || tmux; fi
 
 function lk {
   cd "$(walk "$@")"

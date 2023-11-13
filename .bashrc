@@ -120,7 +120,7 @@ alias log="tail -f /var/log/apache2/error.log | sed 's/\\\\n/\\n/g'"
 alias composer="php ~/dev/composer.phar"
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-	  exec tmux
+  exec tmux attach || tmux
 fi
 
 alias config='/usr/bin/git --git-dir=/home/slawa/.cfg/ --work-tree=/home/slawa'
