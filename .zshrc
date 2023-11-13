@@ -110,4 +110,6 @@ function lk {
   cd "$(walk "$@")"
 }
 
-alias config='/usr/bin/git --git-dir=/home/slawa/.cfg/ --work-tree=/home/slawa'
+alias config='git --git-dir=~/.cfg/ --work-tree=~'
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

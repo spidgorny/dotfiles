@@ -116,11 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias log="tail -f /var/log/apache2/error.log | sed 's/\\\\n/\\n/g'"
-alias composer="php ~/dev/composer.phar"
-
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux attach || tmux
 fi
 
-alias config='/usr/bin/git --git-dir=/home/slawa/.cfg/ --work-tree=/home/slawa'
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
